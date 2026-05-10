@@ -77,7 +77,7 @@ export default function Editor({ value, onChange, onExecute, history }: EditorPr
           value={value}
           onChange={(e) => onChange(e.target.value)}
           onKeyDown={handleKeyDown}
-          placeholder="Enter PlainSpeak command... (e.g. 'Calculate 5 + 5.')"
+          placeholder="Enter ACE instruction... (e.g. 'Calculate 5 + 5.')"
           className="flex-1 bg-transparent border-none focus:ring-0 text-cyan-400 placeholder:text-slate-600 resize-none font-mono text-sm py-3 h-full min-h-[50px] selection:bg-cyan-500/30"
           rows={1}
         />
@@ -94,7 +94,7 @@ export default function Editor({ value, onChange, onExecute, history }: EditorPr
       <div className="px-4 py-2 border-t border-brand-border bg-slate-800/20 flex justify-between items-center">
         <div className="flex items-center gap-4">
           <p className="text-[10px] text-slate-600 font-mono tracking-tight uppercase">
-            Ready to interpret | UTF-8 | PlainSpeak-L1
+            Ready to interpret | UTF-8 | ACE-L1
           </p>
           {value.trim() && (
             <div className={`text-[8px] font-bold px-2 py-0.5 rounded-full uppercase tracking-widest border transition-all ${isCommandKnown(value) ? 'bg-emerald-500/10 text-emerald-500 border-emerald-500/20' : 'bg-amber-500/10 text-amber-500 border-amber-500/20'}`}>

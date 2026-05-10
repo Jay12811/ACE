@@ -1,6 +1,6 @@
 import { CompilerState, ExecutionResult, Shape, GameState } from '../../types';
 
-export class PlainSpeakCompiler {
+export class AceCompiler {
   private state: CompilerState = {
     variables: {
       'PI': 3.14159,

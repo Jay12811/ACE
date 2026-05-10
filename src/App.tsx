@@ -13,7 +13,7 @@ import {
   BookOpen,
   Info
 } from 'lucide-react';
-import { PlainSpeakCompiler } from './lib/plainspeak/compiler';
+import { AceCompiler } from './lib/plainspeak/compiler';
 import { ExecutionResult, CompilerState } from './types';
 import Editor from './components/Editor';
 import OutputLog from './components/OutputLog';
@@ -22,7 +22,7 @@ import FocusedView from './components/FocusedView';
 
 export default function App() {
   const [input, setInput] = useState('');
-  const [compiler] = useState(new PlainSpeakCompiler());
+  const [compiler] = useState(new AceCompiler());
   const [logs, setLogs] = useState<ExecutionResult[]>([]);
   const [state, setState] = useState<CompilerState>(compiler.getState());
   const [focusedLog, setFocusedLog] = useState<ExecutionResult | null>(null);
