@@ -1,0 +1,6 @@
+{
+  "name": "ACE",
+  "description": "Advanced Computing Engine: An execution engine for a natural language programming language that translates English instructions into logic, math, and visual outputs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
